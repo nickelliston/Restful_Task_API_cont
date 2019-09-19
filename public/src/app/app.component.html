@@ -1,0 +1,12 @@
+<body>
+  <h1>{{ title }}</h1>
+
+  <div>
+    <h2>All the Tasks</h2>
+    <div *ngFor="let task of tasks" class="task">
+      <h3>{{task.title}}</h3>
+      <p>{{task.description}}</p>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</body>
